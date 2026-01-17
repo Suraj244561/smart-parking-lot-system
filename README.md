@@ -2,7 +2,7 @@
 
 A comprehensive backend system design for managing a smart parking lot with vehicle entry/exit, automatic parking space allocation, real-time availability updates, and dynamic fee calculation.
 
-## 📋 Table of Contents
+##  Table of Contents
 
 1. [System Architecture](#system-architecture)
 2. [Functional Requirements](#functional-requirements)
@@ -15,7 +15,7 @@ A comprehensive backend system design for managing a smart parking lot with vehi
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ### High-Level Architecture
 
@@ -55,7 +55,7 @@ A comprehensive backend system design for managing a smart parking lot with vehi
 
 ---
 
-## ✨ Functional Requirements
+##  Functional Requirements
 
 ### 1. **Parking Spot Allocation**
 - Automatically assign parking spots based on:
@@ -84,7 +84,7 @@ A comprehensive backend system design for managing a smart parking lot with vehi
 
 ---
 
-## 🗄️ Database Design
+##  Database Design
 
 ### Entity-Relationship Diagram
 
@@ -270,7 +270,7 @@ CREATE INDEX idx_transaction_date_range ON parking_transaction(created_date, sta
 
 ---
 
-## 🧩 Core Components
+##  Core Components
 
 ### 1. **Enum Classes**
 - `VehicleType`: MOTORCYCLE, CAR, SUV, BUS
@@ -304,7 +304,7 @@ CREATE INDEX idx_transaction_date_range ON parking_transaction(created_date, sta
 
 ---
 
-## 🔧 Algorithm Details
+##  Algorithm Details
 
 ### Spot Allocation Algorithm
 
@@ -414,7 +414,7 @@ Occupancy-based Multiplier:
 
 ---
 
-## 🔄 Concurrency Handling
+##  Concurrency Handling
 
 ### Thread-Safe Spot Allocation
 
@@ -591,7 +591,7 @@ This ensures eventual consistency for read operations
 
 ---
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 - Java 11 or higher
@@ -643,7 +643,7 @@ This ensures eventual consistency for read operations
 
 ---
 
-## 📊 Performance Metrics
+##  Performance Metrics
 
 - **Spot Allocation**: < 100ms
 - **Fee Calculation**: < 50ms
@@ -653,7 +653,7 @@ This ensures eventual consistency for read operations
 
 ---
 
-## 📝 Testing
+##  Testing
 
 ```bash
 # Unit tests
@@ -668,7 +668,7 @@ mvn gatling:execute
 
 ---
 
-## 🔐 Security Considerations
+##  Security Considerations
 
 1. **Input Validation**: All user inputs validated
 2. **SQL Injection Prevention**: Parameterized queries used
@@ -679,20 +679,3 @@ mvn gatling:execute
 
 ---
 
-## 📚 References
-
-- [System Design Interview](https://www.geeksforgeeks.org/system-design/)
-- [Smart Parking Research Paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC8125470/)
-- [Database Design Best Practices](https://dev.mysql.com/doc/)
-- [Java Concurrency Guide](https://docs.oracle.com/javase/tutorial/essential/concurrency/)
-
----
-
-## 📄 License
-
-MIT License - See LICENSE file for details
-
----
-
-**Author**: Suraj  
-**Last Updated**: January 2026
